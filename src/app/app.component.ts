@@ -7,4 +7,10 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'recipes';
+  clickState: string = 'recipe';
+
+  onNav(link:string)
+  {
+    this.clickState = link;
+  }
 }
