@@ -4,4 +4,4 @@
     </div>
 </div>
 
-<app-recipe-item *ngFor="let recipe of recipes" [recipe] = "recipe"></app-recipe-item>
+<app-recipe-item *ngFor="let recipe of recipes" [recipe] = "recipe" (selectedRecipe)="clickedRecipe($event)"></app-recipe-item>
